@@ -1,0 +1,21 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        
+        #Used to store values
+        CheckList = []
+
+        for item in nums:
+            if item not in CheckList:
+                CheckList.append(item)
+        
+        counter = len(CheckList)
+
+        for item in nums:
+            if item in CheckList:
+                counter = counter - 1
+        
+        if counter == 0:
+            return False
+        else:
+            return True
+
