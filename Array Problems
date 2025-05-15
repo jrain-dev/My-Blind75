@@ -19,3 +19,17 @@ class Solution:
         else:
             return True
 
+    def removeDuplicates(self, nums: List[int]) -> int:
+        
+        newList = []
+
+        for i in nums[:]:
+            if i not in newList:
+                newList.append(i)
+            elif i in newList:
+                nums.remove(i)
+                
+        k = len(nums)
+
+        return k
+
