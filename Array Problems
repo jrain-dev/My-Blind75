@@ -33,3 +33,22 @@ class Solution:
 
         return k
 
+    def isAnagram(self, s: str, t: str) -> bool:
+
+        word1 = list(s)
+        word2 = list(t)
+
+        letterIsPresent = True
+
+        if len(word1) != len(word2):
+                return False
+
+        for letter in word1:
+            if letter in word2:
+                word2.remove(letter)   
+            else:
+                letterIsPresent = False
+                break
+            
+
+        return letterIsPresent
