@@ -62,3 +62,14 @@ class Solution:
         k = len(nums)
 
         return k
+
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+    
+        ans = []
+        mult = range(2)
+
+        for i in mult:
+            for i in nums:
+                ans.append(i)
+        
+        return ans
