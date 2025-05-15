@@ -19,3 +19,6 @@ Valid Anagram:
 Remove Element:
   This one was easy, just had to remember to exclude anything that doesn't directly contribute to the task at hand. 
   Simplicity is the key.
+
+Concatenation of an Array:
+  Simple and direct, no notes.
