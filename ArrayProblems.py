@@ -52,3 +52,13 @@ class Solution:
             
 
         return letterIsPresent
+
+    def removeElement(self, nums: List[int], val: int) -> int:
+        
+        for i in nums[:]:
+            if i == val:
+                nums.remove(i)
+            
+        k = len(nums)
+
+        return k
