@@ -15,3 +15,7 @@ Valid Anagram:
   This solution is rudimentary, and there were much simpler ways to solve the problem.
   The easiest way wouldve been to use the python sorted() function on each of the strings and simply return if the strings were equal or not.
   I learned that there's most likely always a more streamlined way to do what you're oing, and you should always look for that way.
+
+Remove Element:
+  This one was easy, just had to remember to exclude anything that doesn't directly contribute to the task at hand. 
+  Simplicity is the key.
