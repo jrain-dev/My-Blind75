@@ -22,3 +22,10 @@ Remove Element:
 
 Concatenation of an Array:
   Simple and direct, no notes.
+
+Reverse ALinked List:
+  This one confused me at first. I did not know how to return to the Optional[ListNode] type at first. 
+  After some googling i had figured it out, but what really got me was the head = ListNode bit. 
+  I understood why it had to be there, but i was racking my brain trying to figure out how to get rid of the first index. 
+  Then i remembered i can use slices to cut the first (technically second) index out. 
+  Spent a whole lot of time trying to find a workaround when the fundamentals come in to save the day yet again.
