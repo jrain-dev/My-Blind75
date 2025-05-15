@@ -73,3 +73,30 @@ class Solution:
                 ans.append(i)
         
         return ans
+
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        
+        if head is None:
+            return None
+        
+        newList = []
+        revList = [] 
+        
+        while head:
+            newList.append(head.val)
+            head = head.next
+        
+        for n in newList[:]:
+            revList.append(newList[-1])
+            newList.pop()
+
+        #THIS ONE RIGHT HERE
+        head = ListNode(revList[0])
+        
+        current = head
+
+        for n in revList[1:]:
+            current.next = ListNode(n)
+            current = current.next
+
+        return head
