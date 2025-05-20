@@ -23,9 +23,15 @@ Remove Element:
 Concatenation of an Array:
   Simple and direct, no notes.
 
-Reverse ALinked List:
+Reverse A Linked List:
   This one confused me at first. I did not know how to return to the Optional[ListNode] type at first. 
   After some googling i had figured it out, but what really got me was the head = ListNode bit. 
   I understood why it had to be there, but i was racking my brain trying to figure out how to get rid of the first index. 
   Then i remembered i can use slices to cut the first (technically second) index out. 
   Spent a whole lot of time trying to find a workaround when the fundamentals come in to save the day yet again.
+
+Merge Linked Lists: 
+  The Edge cases got me on this problem. 
+  I forgot to add the case for if l1 and l2 had the same value, causing the code to run infinitely in that case, 
+  and then i neglected to use a dummy node to prevent the return value from being None. 
+  I should've been more detailed with my outline of potential cases to solve for.
